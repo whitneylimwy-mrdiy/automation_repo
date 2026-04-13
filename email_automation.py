@@ -60,12 +60,12 @@ def send_email():
     <html>
     <body style="font-family: Arial, sans-serif; font-size: 14px;">
         <p>Dear Team,</p>
-        <p>Hope this email finds you well! Here I attached the <strong>Big Query GB usage</strong>,
-        this email could help us keep track on Big Query Usage.</p>
+        <p>Hope this email finds you well! This workflow email is created since 13 April 2026 and this is to help us to keep track <strong>SPT Dashboard Big Query Usage</strong>.</p>
         <p>Here I attached the spreadsheet link, if you guys have any new dashboard, please fill in the Dashboard URL.</p>
         <a href="https://docs.google.com/spreadsheets/d/1G4bb5CW4wA7IiFrLic_1rGta1-93g7VGmP9e96jxOos/edit?gid=70880802#gid=70880802">
     Click here to view the sheet
     </a>>
+        <p><i>Note this is a scheduled email.<i></p>
         <p>Best Regards,<br><strong>Whitney</strong></p>
     </body>
     </html>
