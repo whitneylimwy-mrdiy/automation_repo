@@ -44,8 +44,7 @@ def get_receivers_from_sheet():
 
 def send_email():
     sender   = "whitney.limwy@mrdiy.com"
-    # password = os.environ.get("EMAIL_PASSWORD")
-    password = "ciml dcic petk iehh"
+    password = os.environ.get("EMAIL_PASSWORD")
     
     receivers     = get_receivers_from_sheet()
     receivers_str = ", ".join(receivers)  # "a@gmail.com, b@gmail.com"
