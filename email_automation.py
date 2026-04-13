@@ -11,8 +11,8 @@ import io
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 def get_receivers_from_sheet():
-    sheet_id = "1IPs5mX0IHZ0CnNShpSnX6pXD33K3bUpxpaTXjDEnF5w"
-    gid      = "0"
+    sheet_id = "1G4bb5CW4wA7IiFrLic_1rGta1-93g7VGmP9e96jxOos"
+    gid      = "70880802"
     csv_url  = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv&gid={gid}"
     response = requests.get(csv_url, verify=False)
     
@@ -65,7 +65,7 @@ def send_email():
         <a href="https://docs.google.com/spreadsheets/d/1G4bb5CW4wA7IiFrLic_1rGta1-93g7VGmP9e96jxOos/edit?gid=70880802#gid=70880802">
     Click here to view the sheet
     </a>>
-        <p><i>Note this is a scheduled email.<i></p>
+        <p><i>Note this email is scheduled by every Monday & Friday 4pm.<i></p>
         <p>Best Regards,<br><strong>Whitney</strong></p>
     </body>
     </html>
