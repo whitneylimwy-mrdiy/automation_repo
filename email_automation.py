@@ -54,7 +54,7 @@ def send_email():
     message             = MIMEMultipart("alternative")
     message["From"]     = sender
     message["To"]       = receivers_str   # ← Dynamic from sheet!
-    message["Subject"]  = "Big Query Usage Notification [Automated Email]"
+    message["Subject"]  = "SPT DASHBOARD URL UPDATE FOR Tracking BQ GB Usage Consumption [Automated Email]"
 
     html_body = """
     <html>
@@ -65,7 +65,7 @@ def send_email():
         <a href="https://docs.google.com/spreadsheets/d/1G4bb5CW4wA7IiFrLic_1rGta1-93g7VGmP9e96jxOos/edit?gid=70880802#gid=70880802">
     Click here to view the sheet
     </a>>
-        <p><i>Note this email is scheduled by every Monday & Friday 4pm.<i></p>
+        <p><i>Note: This email is scheduled by every Monday & Friday 4pm.<i></p>
         <p>Best Regards,<br><strong>Whitney</strong></p>
     </body>
     </html>
