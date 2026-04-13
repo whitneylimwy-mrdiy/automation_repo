@@ -1,12 +1,9 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Scheduled Email
 
-# Controls when the workflow will run
 on:
   schedule:
-    - cron: '0 11 * * 1'  # Every Monday at 9:00 AM UTC
-  workflow_dispatch:       # Allow manual trigger too
+    - cron: '0 11 * * 1'  # Every Monday at 11:00 AM UTC
+  workflow_dispatch:
 
 jobs:
   send-email:
@@ -14,12 +11,15 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4        # ← v3 to v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5    # ← v4 to v5
         with:
           python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests pandas
 
       - name: Run email script
         env:
